@@ -1,0 +1,116 @@
+
+
+<!---------------- Start of the navigation bar ------------------------->
+
+<ActionBar title="Weather app" backgroundColor="white" color="blue">
+    <!-- <StackLayout orientation="horizontal"
+      ios:horizontalAlignment="center"
+      android:horizontalAlignment="left">
+      <Image height="120" width="140px" src="data:image/png;base64,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" class="action-image"></Image>
+      <Label text="Weather Applications" class="title" ></Label>
+    </StackLayout> -->
+  </ActionBar>
+
+<!---------------- End of the navigation bar ------------------------->
+
+    <ListView [items]="panelDatas" >
+        <ng-template let-item="item" let-i="index">
+           
+                <StackLayout  marginTop="45px">
+                    
+                    <StackLayout androidElevation="8" width="80%" height="95%" class="weathercard">
+
+                    <!---------------- Start of the Edit panel to change city name ------------------------->
+
+                        <StackLayout *ngIf="item.edit">
+                            <TextField  class="cityselector"  [(ngModel)]='cityname' hint="Enter Your Location"></TextField>
+                            <Label *ngIf="item.error!=''" text="City Not Found" class="errortext" ></Label>
+                            <button  (tap)="search(i)"  class="citybutton" text="Get Weather Data">
+                                <ActivityIndicator [busy]="isBusy"></ActivityIndicator>
+                            </button>
+                        </StackLayout>    
+
+                    <!---------------- End Of the Edit panel to change city name ------------------------->
+
+                    <!---------------- Start Of the Edit Button ------------------------->
+                    
+                        <button (tap)="editPanelOpen(i)"  class="{{ !item.edit ? 'citybutton' : 'citybuttonred'}}" text="{{ !item.edit ? 'Edit' : 'Close'}}"></button>
+
+                    <!---------------- End Of the Edit Button ------------------------->
+
+                    <!---------------- Start Of the City Details Section ------------------------->
+
+                        <FlexboxLayout *ngIf="item.data!='City Not Entered'" flexDirection="column" alignItems="center" width="80%" marginBottom="50px">
+
+                            <FlexboxLayout flexDirection="column" width="100%" alignItems="center" class="cityborder citydetailwrapper">
+                                <Label text="City Details" style="font-size: 20px;" ></Label>
+                                <Label  text="{{item.data.name}}" class="citynameheading" ></Label>
+                            </FlexboxLayout>
+
+                        <FlexboxLayout *ngIf="item.data!='City Not Entered'" flexDirection="row">
+                            <Label text="Condition : " style="font-size: 20px;" fontWeight="Bold" ></Label>
+                            <Label text="{{item.data.weather[0].main}}" style="font-size: 20px;" ></Label>
+                        </FlexboxLayout>  
+
+                        <FlexboxLayout *ngIf="item.data!='City Not Entered'" flexDirection="row">
+                            <Image width="300px" height="300px"
+                                src="http://openweathermap.org/img/wn/{{item.data.weather[0].icon}}@2x.png" flexGrow="1">
+                            </Image>
+                        </FlexboxLayout>
+
+                        <FlexboxLayout *ngIf="item.data!='City Not Entered'" flexDirection="row">
+                            <Label text="Description : " style="font-size: 20px;" fontWeight="Bold" ></Label>
+                            <Label text="{{item.data.weather[0].description}}" style="font-size: 20px;" ></Label>
+                        </FlexboxLayout>              
+
+                        </FlexboxLayout>
+
+                        <FlexboxLayout *ngIf="item.data!='City Not Entered'"  flexDirection="row" justifyContent="center">
+                            <Image width="210px" height="210px"
+                                src="https://img.icons8.com/color/2x/summer.png" flexGrow="1">
+                            </Image>
+                            <Image width="210px" height="210px"
+                                src="https://img.icons8.com/color/2x/wind.png" flexGrow="1">
+                            </Image>    
+                        </FlexboxLayout>
+
+                        <StackLayout *ngIf="item.data!='City Not Entered'" class="locationwrapper" >
+
+                            <FlexboxLayout flexDirection="row" justifyContent="center" class="cityborder">
+                                <Label text="{{item.data.main.temp}} F"  class="textFontCenter" flexGrow="1" ></Label>
+                                <Label text="{{item.data.wind.speed}} km/hr" class="textFontCenter" flexGrow="1" ></Label>
+                            </FlexboxLayout>
+                            
+                            <FlexboxLayout   flexDirection="row" justifyContent="center">
+                                <Label text="{{item.data.coord.lon}} Longitude"  class="textFontCenter" flexGrow="1" ></Label>
+                                <Label text="{{item.data.coord.lat}} Latitude" style="font-size: 20px;text-align: center" flexGrow="1" ></Label>
+                            </FlexboxLayout>
+
+                        
+
+                        <!---------------- End Of the City Details Section ------------------------->
+
+                        <!---------------- Start of the timer update section ------------------------->
+
+                        <FlexboxLayout *ngIf="item.data!='City Not Entered'" marginTop="30px" flexDirection="row" justifyContent="center">
+                            <Label text="Last updated on : "  class="textFontCenter"  ></Label>
+                            <Label text="{{item.date}}" style="font-size: 20px;text-align: center;height: 200px;" ></Label>
+                        </FlexboxLayout>
+
+                        <!---------------- End of the timer update section ------------------------->
+
+                        </StackLayout>
+
+                        <!---------------- Start of the Initial empty panel ------------------------->
+
+                        <FlexboxLayout *ngIf="item.data=='City Not Entered'" (tap)="editPanelOpen(i)" flexDirection="row" alignitems="center" justifyContent="center" class="initialPanelWrapper">
+                            <Label text="Location Not Entered" fontWeight="bold"  style="font-size: 20px;text-align: center;height: 200px;"></Label>
+                        </FlexboxLayout>
+
+                        <!---------------- end of the Initial empty panel ------------------------->
+
+                    </StackLayout>
+                
+                </StackLayout>
+        </ng-template>
+    </ListView>

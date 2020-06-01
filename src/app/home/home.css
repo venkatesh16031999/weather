@@ -1,0 +1,87 @@
+.home-wrapper{
+    /* background-color: rgba(38, 69, 207, 0.4); */
+    background-image: url("https://img.freepik.com/free-vector/white-abstract-background-paper-style_23-2148399444.jpg?size=626&ext=jpg");
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.weathercard{
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+.cityselector{
+    height: 120px;
+}
+
+.citybutton{
+    background-color: #4d68e0;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    border-radius: 150px;
+}
+
+.citybuttonred{
+    background-color: rgb(228, 85, 85);
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    border-radius: 150px;
+}
+
+.citynameheading{
+    font-size: 30px;
+    font-weight: 500;
+    color:black;
+}
+
+.title{
+    font-size: 25px;
+    color: #2847d2;
+    font-weight: 600;
+
+}
+
+.citydetailwrapper{
+    background-color: #dfe1e5;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.cityborder{
+    /* border-bottom-color:#2847d2;
+    border-bottom-width:5px; */
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.details{
+    background-color: grey;
+}
+
+.locationwrapper{
+    border-radius: 20px;
+    background-color: #4d68e0;
+    color: white;
+
+}
+
+.errortext{
+    font-size: 14px;
+    color:red;
+    text-align: center;
+}
+
+.textFontCenter{
+    font-size: 20px;
+    text-align: center;
+}
+
+.initialPanelWrapper{
+    height: 300px;
+}
